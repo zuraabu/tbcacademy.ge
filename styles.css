@@ -1,0 +1,241 @@
+body {
+  background-color: #2b2b2b;
+}
+.nav {
+  font-family: Sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100% !important;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #1a1e1f;
+}
+
+.nav a {
+  font-family: Helvetica, sans-serif;
+  float: left;
+  padding: 0 10px;
+  margin: 10px;
+  color: aliceblue;
+  text-decoration: none;
+  display: block;
+}
+.nav #menu-toggle {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .nav a {
+    display: none;
+  }
+  .nav a#menu-toggle {
+    display: flex;
+    position: absolute;
+    top: -1px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav.nav--open {
+    position: relative;
+  }
+  .nav.nav--open #menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.nav--open a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.burger_menu_icon {
+  display: none;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+}
+
+#img_comp-ljio6uoi {
+  width: 100%;
+}
+.top-left {
+  font-family: arial;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 200px;
+  left: 250px;
+}
+.top-left2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 280px;
+  left: 250px;
+}
+.learn_more_txt {
+  width: 960px;
+  font-family: arial;
+  font-size: 28px;
+  color: #f4f4f4;
+  line-height: 1.5;
+}
+.learn_more_section {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 220px;
+}
+/* Card section */
+.Cards_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #161616;
+}
+.Cards_container {
+  width: 90%;
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.Cards {
+  width: 300px;
+  height: 414px;
+  margin: -12.5px 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  order-color: rgba(85, 85, 85, 1) rgba(85, 85, 85, 1) rgba(85, 85, 85, 1)
+    rgba(85, 85, 85, 1);
+  margin: 20px 20px;
+  overflow: hidden;
+}
+.card,
+img {
+  width: 300px;
+  height: 170px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+.cards,
+p {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: white;
+  padding: 0 0 20px 20px;
+}
+.course_details {
+  margin: 100px 0 20px 20px;
+}
+.cards,
+a {
+  font-size: 16px;
+  color: #00aeef;
+}
+/* carousel section */
+.carousel_section {
+  height: 364px;
+  background-color: #3b3b3b;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carousel {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel-images > img {
+  width: 250px;
+  height: 70px;
+  padding: 0 100px;
+}
+.carousel > svg {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin: 0 50px;
+}
+/* QA */
+.QA_section {
+  background-color: #161616;
+  height: 485px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.QA_wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 900px;
+  height: 340px;
+  padding: 0 0 20px 20px;
+}
+.QA_head {
+  display: flex;
+  justify-content: center;
+}
+.QA_questions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+.QA_questions > a {
+  font-size: 18px;
+  color: white;
+  padding: 0 0 10px 0;
+  cursor: pointer;
+}
+.QA_questions > p {
+  font-size: 14px;
+}
+hr {
+  width: 100%;
+}
+
+/*footer */
+footer {
+  background-color: #1a1e20;
+  height: 230px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer_leftSide {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer_btn {
+  width: 160px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: #00aeef;
+  border: none;
+  color: white;
+}
+.footer_rightSide {
+  width: 50px;
+  display: flex;
+}
+.footer_rightSide > img {
+  padding: 20px 5px;
+  margin-left: 20px;
+}
